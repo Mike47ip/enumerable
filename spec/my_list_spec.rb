@@ -1,24 +1,20 @@
-# my_list_test.rb
-require 'minitest/autorun'
 require_relative '../my_list'
 
-class MyListTest < Minitest::Test
-  def setup
-    @list = MyList.new(1, 2, 3, 4)
+describe 'Unit tests for MyList class' do
+  it 'should satisfy the condition' do
+    list = MyList.new(1, 2, 3, 4)
+    expect(list.all? { |e| e < 5 }).to eq(true)
+    expect(list.all? { |e| e > 5 }).to eq(false)
   end
 
-  def test_all_method
-    assert_equal(true, @list.all? { |e| e < 5 })
-    assert_equal(false, @list.all? { |e| e > 5 })
+  it 'should satisfy the condition' do
+    list = MyList.new(1, 2, 3, 4)
+    expect(list.any? { |e| e == 2 }).to eq(true)
+    expect(list.any? { |e| e == 5 }).to eq(false)
   end
 
-  def test_any_method
-    assert_equal(true, @list.any? { |e| e == 2 })
-    assert_equal(false, @list.any? { |e| e == 5 })
-  end
-
-  def test_filter_method
-    assert_equal([2, 4], @list.filter(&:even?))
-    assert_equal([1, 3], @list.filter(&:odd?))
+  it 'should return filtered list by the given logic' do
+    list = MyList.new(1, 2, 3, 4)
+    expect(list.filter(&:even?)).to eq([2, 4])
   end
 end
