@@ -12,7 +12,6 @@ class MyList
   end
 end
 
-
 # Example usage
 list = MyList.new(1, 2, 3, 4)
 
