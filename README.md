@@ -151,6 +151,6 @@ N/A
 
 ## 📝 License <a name="license"></a>
 
-This project is [MIT](https://github.com/Mike47ip/enumerable/LICENSE) licensed.
+This project is [MIT](https://github.com/Mike47ip/enumerable/blob/main/LICENSE) licensed.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
