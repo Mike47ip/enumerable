@@ -1,6 +1,6 @@
 # my_list_test.rb
 require 'minitest/autorun'
-require_relative 'my_list'
+require_relative '../my_list'
 
 class MyListTest < Minitest::Test
   def setup
