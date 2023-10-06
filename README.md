@@ -101,7 +101,7 @@ No deployment have made yet.
 
 - GitHub: [@Mike47ip](https://github.com/Mike47ip)
 - Twitter: [@ip_mikee](https://twitter.com/ip_mikee)
-- LinkedIn: [Michael Darkwah](https://linkedin.com/in/michael-darkwah-81
+- LinkedIn: [Michael Darkwah](https://linkedin.com/in/michael-darkwah-81)
 
 👤 **Agustin Soria**
 
