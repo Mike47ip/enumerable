@@ -9,6 +9,8 @@ AllCops:
 
 Layout/LineLength:
   Max: 120
+Layout/EndOfLine:
+  Enabled: False
 Metrics/MethodLength:
   Max: 20
 Metrics/AbcSize:
