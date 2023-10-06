@@ -1,6 +1,6 @@
 # my_list_test.rb
 require 'minitest/autorun'
-require_relative '../my_list'
+require_relative 'my_list'
 
 class MyListTest < Minitest::Test
   def setup
@@ -18,7 +18,7 @@ class MyListTest < Minitest::Test
   end
 
   def test_filter_method
-    assert_equal([2, 4], @list.filter(&:even?))
-    assert_equal([1, 3], @list.filter(&:odd?))
+    assert_equal([2, 4], @list.filter { |e| e.even? })
+    assert_equal([1, 3], @list.filter { |e| e.odd? })
   end
 end

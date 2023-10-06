@@ -1,4 +1,3 @@
-# my_enumerable.rb
 module MyEnumerable
   def all?
     each { |item| return false unless yield item }
