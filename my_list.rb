@@ -24,4 +24,6 @@ puts(list.any? { |e| e == 2 }) # Should output: true
 puts(list.any? { |e| e == 5 }) # Should output: false
 
 # Test #filter
-puts(list.filter(&:even?)) # Should output: [2, 4]
+
+filtered_list = list.filter(&:even?)
+puts(filtered_list.inspect) # Should output: [2, 4]
